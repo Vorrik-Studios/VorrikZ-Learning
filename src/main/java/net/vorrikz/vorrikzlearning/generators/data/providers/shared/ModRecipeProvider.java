@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.vorrikz.vorrikzlearning.generators.data.providers.shared.recipes.Blocks;
@@ -44,6 +45,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         Tools.registerToolRecipe(recipeOutput, Tools.ToolType.SHOVEL,
                 ModItems.CHISEL.get(), "chisel",
                 ModItems.BISMUTH.get(), "bismuth", "bismuth");
+
+        stairBuilder(ModBlocks.BISMUTH_STAIRS.get(), Ingredient.of(ModItems.BISMUTH)).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.BISMUTH)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BISMUTH_SLAB.get(), ModItems.BISMUTH.get());
+
+        buttonBuilder(ModBlocks.BISMUTH_BUTTON.get(), Ingredient.of(ModItems.BISMUTH.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.BISMUTH.get())).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.BISMUTH_PRESSURE_PLATE.get(), ModItems.BISMUTH.get());
+
+        fenceBuilder(ModBlocks.BISMUTH_FENCE.get(), Ingredient.of(ModItems.BISMUTH.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.BISMUTH.get())).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.BISMUTH_FENCE_GATE.get(), Ingredient.of(ModItems.BISMUTH.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.BISMUTH.get())).save(recipeOutput);
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BISMUTH_WALL.get(), ModItems.BISMUTH.get());
+
+        doorBuilder(ModBlocks.BISMUTH_DOOR.get(), Ingredient.of(ModItems.BISMUTH.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.BISMUTH.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.BISMUTH_TRAPDOOR.get(), Ingredient.of(ModItems.BISMUTH.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.BISMUTH.get())).save(recipeOutput);
 
         // Smelting & Blasting Recipes for Bismuth
         Cooking.registerSmeltingRecipes(recipeOutput, RecipeCategory.MISC,

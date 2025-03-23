@@ -28,6 +28,21 @@ public class Language {
         public static String ore(String name) {
             return ore(name, true);
         }
+        public static class NonBlocks {
+            public static String fence(String name ) { return get_string(name, "fence"); }
+            public static String fence_gate(String name) { return get_string(name, "fence_gate"); }
+            public static String wall(String name ) { return get_string(name, "wall"); }
+            public static String door(String name ) { return get_string(name, "door"); }
+            public static String trapdoor(String name ) { return get_string(name, "trapdoor"); }
+            public static String stairs(String name ) { return get_string(name, "stairs"); }
+            public static String slab(String name ) { return get_string(name, "slab"); }
+            public static String button(String name ) { return get_string(name, "button"); }
+            public static String pressure_plate(String name ) { return get_string(name, "pressure_plate"); }
+
+            private static String get_string(String name, String suffix) {
+                return "block." + MOD_ID + name + "_" + suffix;
+            }
+        }
     }
 
     public static class Tooltips {

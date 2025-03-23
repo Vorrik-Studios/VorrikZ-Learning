@@ -11,16 +11,16 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.vorrikz.vorrikzlearning.VorrikzLearning;
 import net.vorrikz.vorrikzlearning.registries.custom.items.FuelItem;
+import net.vorrikz.vorrikzlearning.registries.util.attributes.*;
 
 import java.util.List;
 import java.util.function.Supplier;
@@ -95,13 +95,125 @@ public class Registries {
             return registerBlock(name, block);
         }
 
+        public static class NonBlocks {
+            public static DeferredBlock<StairBlock> stairs(String name, BlockState baseState, BlockAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.STAIRS), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops();
+                    properties = add_sound(properties, attributes);
+
+                    return new StairBlock(baseState, properties);
+                });
+            }
+            public static DeferredBlock<SlabBlock> slabs(String name, BlockAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.SLAB), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops();
+                    properties = add_sound(properties, attributes);
+
+                    return new SlabBlock(properties);
+                });
+            }
+            public static DeferredBlock<PressurePlateBlock> pressure_plate(String name, PressurePlateAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.PRESSURE_PLATE), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops();
+                    properties = add_sound(properties, attributes);
+
+                    return new PressurePlateBlock(attributes.getBlockSetType(), properties);
+                });
+            }
+            public static DeferredBlock<ButtonBlock> button(String name, ButtonAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.BUTTON), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops()
+                            .noCollission();
+                    properties = add_sound(properties, attributes);
+
+                    return new ButtonBlock(attributes.getBlockSetType(), attributes.getTicksToStayPressed(), properties);
+                });
+            }
+            public static DeferredBlock<FenceBlock> fence(String name, BlockAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.FENCE), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops();
+                    properties = add_sound(properties, attributes);
+
+                    return new FenceBlock(properties);
+                });
+            }
+            public static DeferredBlock<FenceGateBlock> fence_gate(String name, FenceGateAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.FENCE_GATE), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops();
+                    properties = add_sound(properties, attributes);
+
+                    return new FenceGateBlock(attributes.getWoodType(), properties);
+                });
+            }
+            public static DeferredBlock<WallBlock> wall(String name, BlockAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.WALL), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops();
+                    properties = add_sound(properties, attributes);
+
+                    return new WallBlock(properties);
+                });
+            }
+            public static DeferredBlock<DoorBlock> door(String name, DoorAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.DOOR), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion();
+                    properties = add_sound(properties, attributes);
+
+                    return new DoorBlock(attributes.getBlockSetType(), properties);
+                });
+            }
+            public static DeferredBlock<TrapDoorBlock> trapdoor(String name, DoorAttributes attributes) {
+                return registerBlock(get_name(name, ENameSuffixes.TRAPDOOR), () -> {
+                    BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                            .strength(attributes.getStrength())
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion();
+                    properties = add_sound(properties, attributes);
+
+                    return new TrapDoorBlock(attributes.getBlockSetType(), properties);
+                });
+            }
+
+            private static BlockBehaviour.Properties add_sound(BlockBehaviour.Properties properties, BlockAttributes attributes) {
+                if (attributes.getSound() != null) {
+                    return properties.sound(attributes.getSound());
+                }
+                return properties;
+            }
+        }
+
         public static void register(IEventBus eventBus) {
             REGISTER.register(eventBus);
         }
 
         private enum ENameSuffixes {
             BLOCK("_block"),
-            ORE("_ore");
+            ORE("_ore"),
+            STAIRS("_stairs"),
+            SLAB("_slab"),
+            PRESSURE_PLATE("_pressure_plate"),
+            BUTTON("_button"),
+            FENCE("_fence"),
+            FENCE_GATE("_fence_gate"),
+            WALL("_wall"),
+            DOOR("_door"),
+            TRAPDOOR("_trapdoor");
 
             private final String suffix;
 

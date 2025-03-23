@@ -23,6 +23,15 @@ public class ModLanguageProvider extends LanguageProvider {
         this.add(Language.Blocks.block("magic_block", false), "Magic Block");
         this.add(Language.Blocks.ore("bismuth"), "Bismuth Ore");
         this.add(Language.Blocks.ore("bismuth_deepslate"), "Deepslate Bismuth Ore");
+        this.add(Language.Blocks.NonBlocks.fence("bismuth"), "Bismuth Fence");
+        this.add(Language.Blocks.NonBlocks.fence_gate("bismuth"), "Bismuth Fence Gate");
+        this.add(Language.Blocks.NonBlocks.wall("bismuth"), "Bismuth Wall");
+        this.add(Language.Blocks.NonBlocks.stairs("bismuth"), "Bismuth Stairs");
+        this.add(Language.Blocks.NonBlocks.slab("bismuth"), "Bismuth Slab");
+        this.add(Language.Blocks.NonBlocks.button("bismuth"), "Bismuth Button");
+        this.add(Language.Blocks.NonBlocks.pressure_plate("bismuth"), "Bismuth Pressure Plate");
+        this.add(Language.Blocks.NonBlocks.door("bismuth"), "Bismuth Door");
+        this.add(Language.Blocks.NonBlocks.trapdoor("bismuth"), "Bismuth Trapdoor");
 
         this.add(Language.Tooltips.tooltip("magic_block"), "This Block is very §9MAGICAL§r");
         this.add(Language.Tooltips.tooltip("radish"), "Tastes really great!");
