@@ -1,0 +1,4 @@
+// 1.21.1	2025-03-23T02:43:25.9638657	Tags for minecraft:block mod id vorrikzlearning
+35224dabe8b8f30094f53547b1e9e949ebfa9134 data/minecraft/tags/block/mineable/pickaxe.json
+3430db8fbadf4df20dd32e9f7b2ec480e6a501fc data/minecraft/tags/block/needs_diamond_tool.json
+d4bd84e04ecef49bdfff25a6833052e315d63547 data/minecraft/tags/block/needs_iron_tool.json

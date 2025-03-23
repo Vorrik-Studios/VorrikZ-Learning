@@ -1,0 +1,17 @@
+{
+  "block.vorrikzlearning.bismuth_block": "Block of Bismuth",
+  "block.vorrikzlearning.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
+  "block.vorrikzlearning.bismuth_ore": "Bismuth Ore",
+  "block.vorrikzlearning.magic_block": "Magic Block",
+  "creativetab.vorrikzlearning.vorrikz_tab": "Learning VorrikZ",
+  "item.vorrikzlearning.bismuth": "Bismuth",
+  "item.vorrikzlearning.chisel": "Chisel",
+  "item.vorrikzlearning.frostfire_ice": "Frostfire Ice",
+  "item.vorrikzlearning.radish": "Radish",
+  "item.vorrikzlearning.raw_bismuth": "Raw Bismuth",
+  "item.vorrikzlearning.starlight_ashes": "Starlight Ashes",
+  "tooltip.vorrikzlearning.chisel.shift_down.tooltip": "This Item can chisel Blocks into Bricks",
+  "tooltip.vorrikzlearning.chisel.tooltip": "Press §eShift§r for more Information",
+  "tooltip.vorrikzlearning.magic_block.tooltip": "This Block is very §9MAGICAL§r",
+  "tooltip.vorrikzlearning.radish.tooltip": "Tastes really great!"
+}
