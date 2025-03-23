@@ -95,6 +95,10 @@ public class Registries {
             return registerBlock(name, block);
         }
 
+        public static void register(IEventBus eventBus) {
+            REGISTER.register(eventBus);
+        }
+
         private enum ENameSuffixes {
             BLOCK("_block"),
             ORE("_ore");
@@ -120,9 +124,6 @@ public class Registries {
         }
         private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
             Items.get_registry().register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-        }
-        public static void register(IEventBus eventBus) {
-            REGISTER.register(eventBus);
         }
     }
 

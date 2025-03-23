@@ -13,8 +13,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        this.basicItem(ModItems.BISMUTH.get());
-        this.basicItem(ModItems.RAW_BISMUTH.get());
+        basicItem(ModItems.BISMUTH.get());
+        basicItem(ModItems.RAW_BISMUTH.get());
 
         basicItem(ModItems.RADISH.get());
         basicItem(ModItems.STARLIGHT_ASHES.get());

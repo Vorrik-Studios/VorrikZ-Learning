@@ -11,16 +11,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stick": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:stick"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "vorrikzlearning:chisel_from_bismuth_and_stick"
@@ -31,8 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bismuth",
-      "has_stick"
+      "has_bismuth"
     ]
   ],
   "rewards": {

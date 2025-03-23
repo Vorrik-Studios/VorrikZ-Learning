@@ -40,8 +40,10 @@ public class VorrikzLearning
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        // Creative mode tabs
         ModCreativeModeTabs.register(modEventBus);
 
+        // Blocks and items
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

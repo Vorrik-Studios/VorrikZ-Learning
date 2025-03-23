@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bismuth_block": {
+    "has_magic_block": {
       "conditions": {
         "items": [
           {
-            "items": "vorrikzlearning:bismuth_block"
+            "items": "vorrikzlearning:magic_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "vorrikzlearning:bismuth_from_bismuth_block"
+        "recipe": "vorrikzlearning:magic_block_uncraft_bismuth_and_bismuth_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bismuth_block"
+      "has_magic_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "vorrikzlearning:bismuth_from_bismuth_block"
+      "vorrikzlearning:magic_block_uncraft_bismuth_and_bismuth_block"
     ]
   }
 }

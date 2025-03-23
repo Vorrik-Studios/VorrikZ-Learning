@@ -12,7 +12,8 @@ import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> VORRIKZ_TAB = Registries.CreativeModeTabs.tab("vorrikz",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BISMUTH.get()))
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.BISMUTH.get()))
                     .title(Translatables.creative_tab("vorrikz"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BISMUTH);
