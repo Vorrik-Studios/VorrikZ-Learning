@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "vorrikzlearning:block/bismuth_block"
+  }
+}
