@@ -1,7 +1,9 @@
-// 1.21.1	2025-03-23T22:45:46.6932448	Tags for minecraft:item mod id vorrikzlearning
-8ca2f947326dbc352343703299e185f9adb04935 data/minecraft/tags/item/axes.json
+// 1.21.1	2025-03-24T00:55:03.7605746	Tags for minecraft:item mod id vorrikzlearning
+8c6d11f465130ff6f6d2c12269ab1489477b49f4 data/minecraft/tags/item/axes.json
+ebd33d4d5027215c8220223aa9ecd66a706b8258 data/minecraft/tags/item/enchantable/armor.json
 6cfd94228c4fa3daff1da2b5ee41ec23ad00c49a data/minecraft/tags/item/hoes.json
-26a8983f6ea1ba80df5b9119b0c1c1ae9dcb4b5b data/minecraft/tags/item/pickaxes.json
-16008cc74a2beba110e657adccff4a4cc179b3de data/minecraft/tags/item/shovels.json
-b7ed631d1fd9b5d2890674e530e757ed1dbe1590 data/minecraft/tags/item/swords.json
+8c0f9eff25dd1c6f19171b76521569008e8be0b8 data/minecraft/tags/item/pickaxes.json
+c753c7d0fc77ff860c59821549c20159fd771fd4 data/minecraft/tags/item/shovels.json
+defd1afef464c45010679ebc8162ad119a0e59c3 data/minecraft/tags/item/swords.json
+ebd33d4d5027215c8220223aa9ecd66a706b8258 data/minecraft/tags/item/trimmable_armor.json
 edb00c13bdb85aa9a24569e8d4849b10d8e72b13 data/vorrikzlearning/tags/item/transformable_items.json

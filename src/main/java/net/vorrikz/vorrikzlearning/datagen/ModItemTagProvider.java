@@ -30,14 +30,31 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.COMPASS);
 
         tag(ItemTags.SWORDS)
-                .add(ModItems.BISMUTH_SWORD.get());
+                .add(ModItems.BISMUTH_SWORD.get())
+                .add(ModItems.BISMUTH_AXE.get())
+                .add(ModItems.BISMUTH_HAMMER.get());
         tag(ItemTags.SHOVELS)
-                .add(ModItems.BISMUTH_SHOVEL.get());
+                .add(ModItems.BISMUTH_SHOVEL.get())
+                .add(ModItems.BISMUTH_HAMMER.get());
         tag(ItemTags.PICKAXES)
-                .add(ModItems.BISMUTH_PICKAXE.get());
+                .add(ModItems.BISMUTH_PICKAXE.get())
+                .add(ModItems.BISMUTH_HAMMER.get());
         tag(ItemTags.AXES)
-                .add(ModItems.BISMUTH_AXE.get());
+                .add(ModItems.BISMUTH_AXE.get())
+                .add(ModItems.BISMUTH_HAMMER.get());
         tag(ItemTags.HOES)
                 .add(ModItems.BISMUTH_HOE.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BISMUTH_HELMET.get())
+                .add(ModItems.BISMUTH_CHESTPLATE.get())
+                .add(ModItems.BISMUTH_LEGGINGS.get())
+                .add(ModItems.BISMUTH_BOOTS.get());
+
+        tag(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.BISMUTH_HELMET.get())
+                .add(ModItems.BISMUTH_CHESTPLATE.get())
+                .add(ModItems.BISMUTH_LEGGINGS.get())
+                .add(ModItems.BISMUTH_BOOTS.get());
     }
 }
