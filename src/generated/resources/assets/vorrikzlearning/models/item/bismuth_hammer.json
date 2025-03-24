@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vorrikzlearning:item/bismuth_hammer"
+  }
+}
