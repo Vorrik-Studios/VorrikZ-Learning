@@ -1,5 +1,6 @@
-// 1.21.1	2025-03-24T00:40:20.4496674	Tags for minecraft:item mod id vorrikzlearning
+// 1.21.1	2025-03-24T00:55:03.7605746	Tags for minecraft:item mod id vorrikzlearning
 8c6d11f465130ff6f6d2c12269ab1489477b49f4 data/minecraft/tags/item/axes.json
+ebd33d4d5027215c8220223aa9ecd66a706b8258 data/minecraft/tags/item/enchantable/armor.json
 6cfd94228c4fa3daff1da2b5ee41ec23ad00c49a data/minecraft/tags/item/hoes.json
 8c0f9eff25dd1c6f19171b76521569008e8be0b8 data/minecraft/tags/item/pickaxes.json
 c753c7d0fc77ff860c59821549c20159fd771fd4 data/minecraft/tags/item/shovels.json

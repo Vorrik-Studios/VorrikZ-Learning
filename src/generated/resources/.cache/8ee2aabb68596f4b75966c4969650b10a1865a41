@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-24T00:40:20.4506673	Item Models: vorrikzlearning
+// 1.21.1	2025-03-24T00:55:03.7615752	Item Models: vorrikzlearning
 f577c59fea9c1f160f7c731eb860c1b1bde53c4a assets/vorrikzlearning/models/item/bismuth.json
 d912bf50096fe75f00418ee74c9797901362305a assets/vorrikzlearning/models/item/bismuth_axe.json
 b55c99e44c7885dca157ea3ed7204cd8a5a6ecfe assets/vorrikzlearning/models/item/bismuth_boots.json
@@ -39,6 +39,7 @@ fc1c8bf11ec6f0abf6f6974361d4e9aebfe70a16 assets/vorrikzlearning/models/item/bism
 58bbcd6f310d17d12f057220581fc33af24e7dee assets/vorrikzlearning/models/item/bismuth_helmet_quartz_trim.json
 3267a47e493baabfb72724219d9f7ba874ad4a40 assets/vorrikzlearning/models/item/bismuth_helmet_redstone_trim.json
 604d156d64312e00ba445e5a942561d67e09e095 assets/vorrikzlearning/models/item/bismuth_hoe.json
+371680d9afe88869ad8d967b2fe0ab870b7179b0 assets/vorrikzlearning/models/item/bismuth_horse_armor.json
 4342ec2efc0bd84ce60f7e05ef7e01f3929bfc00 assets/vorrikzlearning/models/item/bismuth_leggings.json
 174b23e8e1a5b3a356163ff74df5d2d5b32e443c assets/vorrikzlearning/models/item/bismuth_leggings_amethyst_trim.json
 1c95cca4575877c6dc2f2c57ac2ac21b7aeeecaa assets/vorrikzlearning/models/item/bismuth_leggings_copper_trim.json
