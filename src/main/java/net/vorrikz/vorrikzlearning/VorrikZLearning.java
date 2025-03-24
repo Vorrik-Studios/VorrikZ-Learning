@@ -1,6 +1,7 @@
 package net.vorrikz.vorrikzlearning;
 
 import net.vorrikz.vorrikzlearning.block.ModBlocks;
+import net.vorrikz.vorrikzlearning.component.ModDataComponents;
 import net.vorrikz.vorrikzlearning.item.ModCreativeModeTabs;
 import net.vorrikz.vorrikzlearning.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -42,6 +43,8 @@ public class VorrikZLearning {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
