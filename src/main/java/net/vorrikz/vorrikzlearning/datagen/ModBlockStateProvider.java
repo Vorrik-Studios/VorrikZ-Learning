@@ -1,5 +1,9 @@
 package net.vorrikz.vorrikzlearning.datagen;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.vorrikz.vorrikzlearning.VorrikZLearning;
 import net.vorrikz.vorrikzlearning.block.ModBlocks;
 import net.minecraft.data.PackOutput;
@@ -7,6 +11,7 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.vorrikz.vorrikzlearning.block.custom.BismuthLampBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -40,6 +45,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BISMUTH_PRESSURE_PLATE);
         blockItem(ModBlocks.BISMUTH_FENCE_GATE);
         blockItem(ModBlocks.BISMUTH_TRAPDOOR, "_bottom");
+
+        customLamp(ModBlocks.BISMUTH_LAMP, "bismuth_lamp", BismuthLampBlock.CLICKED);
+    }
+
+    private void customLamp(DeferredBlock<Block> block, String name, BooleanProperty booleanProperty) {
+        getVariantBuilder(block.get()).forAllStates(state -> {
+            if(state.getValue(booleanProperty)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(name + "_on",
+                        ResourceLocation.fromNamespaceAndPath(VorrikZLearning.MOD_ID, "block/" + name + "_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(name + "_off",
+                        ResourceLocation.fromNamespaceAndPath(VorrikZLearning.MOD_ID, "block/" + name + "_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.BISMUTH_LAMP.get(), models().cubeAll(name + "_on",
+                ResourceLocation.fromNamespaceAndPath(VorrikZLearning.MOD_ID, "block/" + name + "_on")));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

@@ -27,6 +27,7 @@ public class ModLanguageProvider extends LanguageProvider {
         this.add(ModBlocks.BISMUTH_SLAB.get(), "Bismuth Slab");
         this.add(ModBlocks.BISMUTH_TRAPDOOR.get(), "Bismuth Trapdoor");
         this.add(ModBlocks.MAGIC_BLOCK.get(), "Magic Block");
+        this.add(ModBlocks.BISMUTH_LAMP.get(), "Bismuth Lamp");
 
         this.add(ModItems.BISMUTH.get(), "Bismuth");
         this.add(ModItems.RAW_BISMUTH.get(), "Raw Bismuth");
@@ -37,6 +38,7 @@ public class ModLanguageProvider extends LanguageProvider {
 
         this.add(ModTranslatables.creativeTabString("bismuth_items"), "VorrikZ Items");
         this.add(ModTranslatables.creativeTabString("bismuth_block"), "VorrikZ Blocks");
+
         this.add(ModTranslatables.tooltipString("radish"), "Tastes really great!");
         this.add(ModTranslatables.tooltipString("chisel"), "Press §eShift§r for more Information");
         this.add(ModTranslatables.tooltipString("chisel.shift_down"), "This Item can chisel Blocks into Bricks");

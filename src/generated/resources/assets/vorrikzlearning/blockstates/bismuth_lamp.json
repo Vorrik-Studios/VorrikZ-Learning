@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "vorrikzlearning:block/bismuth_lamp_off"
+    },
+    "clicked=true": {
+      "model": "vorrikzlearning:block/bismuth_lamp_on"
+    }
+  }
+}

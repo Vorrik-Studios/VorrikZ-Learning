@@ -1,10 +1,11 @@
-// 1.21.1	2025-03-23T21:05:25.6418698	Loot Tables
+// 1.21.1	2025-03-23T21:55:07.5264759	Loot Tables
 b3a4b80ad3067922c72bb1cad0a548344053b2f5 data/vorrikzlearning/loot_table/blocks/bismuth_block.json
 dea89c897c6fcda2dfef7f744fd2c4ea43ec5952 data/vorrikzlearning/loot_table/blocks/bismuth_button.json
 5b62e965769c8119f11ea722ee660172b87e3bca data/vorrikzlearning/loot_table/blocks/bismuth_deepslate_ore.json
 2e7138e3649b3db4205e1e88f14fe73f33fda9b1 data/vorrikzlearning/loot_table/blocks/bismuth_door.json
 9d61ac2212a30972d1d530412e4301adae035bf8 data/vorrikzlearning/loot_table/blocks/bismuth_fence.json
 3d545a21417013aa60e6545a097359ffe86ae468 data/vorrikzlearning/loot_table/blocks/bismuth_fence_gate.json
+272afd007ce1e676c31f482cfb862d9a52ca1a1a data/vorrikzlearning/loot_table/blocks/bismuth_lamp.json
 84757408e6f49555858a46f9087887b9b33627d9 data/vorrikzlearning/loot_table/blocks/bismuth_ore.json
 fcebf2b8d3449f025644acb2f63b9615e39ad0cc data/vorrikzlearning/loot_table/blocks/bismuth_pressure_plate.json
 25d754d1d47c94812249df98296f35075ebc9cd6 data/vorrikzlearning/loot_table/blocks/bismuth_slab.json
