@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "bismuth",
+  "ingredients": [
+    {
+      "item": "vorrikzlearning:bismuth"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "vorrikzlearning:bismuth_button"
+  }
+}

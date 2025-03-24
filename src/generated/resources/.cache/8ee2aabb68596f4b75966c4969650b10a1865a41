@@ -1,5 +1,9 @@
-// 1.21.1	2025-03-23T02:43:25.9658653	Item Models: vorrikzlearning
+// 1.21.1	2025-03-23T21:05:25.6428613	Item Models: vorrikzlearning
 f577c59fea9c1f160f7c731eb860c1b1bde53c4a assets/vorrikzlearning/models/item/bismuth.json
+27c7ff63bdc7a9d2c9eb87e4f8449623927f93ba assets/vorrikzlearning/models/item/bismuth_button.json
+fbfc145ac52898fd545378f8db10109e3acc07ce assets/vorrikzlearning/models/item/bismuth_door.json
+33fc11b9b5997c3a3e4949ddaf08b0d596dd2ae5 assets/vorrikzlearning/models/item/bismuth_fence.json
+01528689ec3a7715bb71c776336a42a46702d81e assets/vorrikzlearning/models/item/bismuth_wall.json
 6d53efbb59d33dd31ac0ee9e591cc0d5ea3a5685 assets/vorrikzlearning/models/item/chisel.json
 820910def53bfdc576a18b33f2f3095420049c37 assets/vorrikzlearning/models/item/frostfire_ice.json
 ae5cc9489d09e247977798aea8e921ec80f171ec assets/vorrikzlearning/models/item/radish.json

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vorrikzlearning:bismuth_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "vorrikzlearning:bismuth"
+  }
+}
