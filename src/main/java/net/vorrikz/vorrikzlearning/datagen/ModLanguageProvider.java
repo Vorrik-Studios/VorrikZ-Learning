@@ -35,6 +35,11 @@ public class ModLanguageProvider extends LanguageProvider {
         this.add(ModItems.STARLIGHT_ASHES.get(), "Starlight Ashes");
         this.add(ModItems.RADISH.get(), "Radish");
         this.add(ModItems.CHISEL.get(), "Chisel");
+        this.add(ModItems.BISMUTH_SWORD.get(), "Bismuth Sword");
+        this.add(ModItems.BISMUTH_SHOVEL.get(), "Bismuth Shovel");
+        this.add(ModItems.BISMUTH_PICKAXE.get(), "Bismuth Pickaxe");
+        this.add(ModItems.BISMUTH_AXE.get(), "Bismuth Axe");
+        this.add(ModItems.BISMUTH_HOE.get(), "Bismuth Hoe");
 
         this.add(ModTranslatables.creativeTabString("bismuth_items"), "VorrikZ Items");
         this.add(ModTranslatables.creativeTabString("bismuth_block"), "VorrikZ Blocks");

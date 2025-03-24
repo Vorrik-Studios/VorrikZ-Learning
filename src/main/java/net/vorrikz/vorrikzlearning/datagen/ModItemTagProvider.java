@@ -1,5 +1,6 @@
 package net.vorrikz.vorrikzlearning.datagen;
 
+import net.minecraft.tags.ItemTags;
 import net.vorrikz.vorrikzlearning.VorrikZLearning;
 import net.vorrikz.vorrikzlearning.item.ModItems;
 import net.vorrikz.vorrikzlearning.util.ModTags;
@@ -28,5 +29,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.STICK)
                 .add(Items.COMPASS);
 
+        tag(ItemTags.SWORDS)
+                .add(ModItems.BISMUTH_SWORD.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.BISMUTH_SHOVEL.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.BISMUTH_PICKAXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.BISMUTH_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.BISMUTH_HOE.get());
     }
 }
