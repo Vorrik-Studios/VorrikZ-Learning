@@ -39,5 +39,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_BISMUTH_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_BISMUTH_TOOL);
+
+        tag(ModTags.Blocks.MINEABLE_WITH_HAMMER)
+                .addTags(BlockTags.MINEABLE_WITH_PICKAXE,
+                        BlockTags.MINEABLE_WITH_AXE, BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }
