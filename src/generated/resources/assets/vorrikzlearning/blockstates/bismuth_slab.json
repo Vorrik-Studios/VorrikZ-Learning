@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vorrikzlearning:block/bismuth_slab"
+    },
+    "type=double": {
+      "model": "vorrikzlearning:block/bismuth_block"
+    },
+    "type=top": {
+      "model": "vorrikzlearning:block/bismuth_slab_top"
+    }
+  }
+}
