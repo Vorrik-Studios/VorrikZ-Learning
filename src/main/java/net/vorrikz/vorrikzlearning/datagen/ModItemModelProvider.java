@@ -1,5 +1,7 @@
 package net.vorrikz.vorrikzlearning.datagen;
 
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.vorrikz.vorrikzlearning.VorrikZLearning;
 import net.vorrikz.vorrikzlearning.block.ModBlocks;
 import net.vorrikz.vorrikzlearning.item.ModItems;
@@ -30,6 +32,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.BISMUTH_WALL, ModBlocks.BISMUTH_BLOCK);
 
         basicItem(ModBlocks.BISMUTH_DOOR.asItem());
+
+        handheldItem(ModItems.BISMUTH_SWORD);
+        handheldItem(ModItems.BISMUTH_SHOVEL);
+        handheldItem(ModItems.BISMUTH_HOE);
+        handheldItem(ModItems.BISMUTH_AXE);
+        handheldItem(ModItems.BISMUTH_PICKAXE);
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
@@ -48,5 +56,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall",  ResourceLocation.fromNamespaceAndPath(VorrikZLearning.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
+    }
+
+    public ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(VorrikZLearning.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

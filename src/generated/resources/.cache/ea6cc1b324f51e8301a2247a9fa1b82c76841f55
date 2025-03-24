@@ -1,6 +1,8 @@
-// 1.21.1	2025-03-23T21:05:25.6388692	Tags for minecraft:block mod id vorrikzlearning
+// 1.21.1	2025-03-23T22:45:46.691193	Tags for minecraft:block mod id vorrikzlearning
 d28b00a664bf00a1005e01eb6599ede010484a3e data/minecraft/tags/block/fences.json
 3da21d8cdbf94b10ae5cd154c7118cffa6349151 data/minecraft/tags/block/fence_gates.json
-d4bd84e04ecef49bdfff25a6833052e315d63547 data/minecraft/tags/block/mineable/pickaxe.json
+973d083e10e4dbaf989a75ca5ce77815a5e7f03e data/minecraft/tags/block/mineable/pickaxe.json
 eec0968331fbf45ee65a8f1d76602c5a6642a2a1 data/minecraft/tags/block/needs_iron_tool.json
 b255fb0769ec22531b0609ddfb354fbd65f1ce5a data/minecraft/tags/block/walls.json
+56db491d698ee2049447d905df6fc2e3e0783f68 data/vorrikzlearning/tags/block/incorrect_for_bismuth_tool.json
+773874dc04d9b9021a50650ccd47da2d307ff2d5 data/vorrikzlearning/tags/block/needs_bismuth_tool.json

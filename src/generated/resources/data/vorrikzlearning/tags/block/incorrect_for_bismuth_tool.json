@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#vorrikzlearning:needs_bismuth_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}
